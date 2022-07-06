@@ -43,42 +43,42 @@
                                 <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-{{--                            <div class="form-group w-50">--}}
-{{--                                <label for="exampleInputFile">Добавить превью</label>--}}
-{{--                                <div class="w-50 mb-2">--}}
-{{--                                    <img src="{{ url('storage/' . $post->preview_image) }}" alt="preview_image" class="w-50">--}}
-{{--                                </div>--}}
-{{--                                <div class="input-group">--}}
-{{--                                    <div class="custom-file">--}}
-{{--                                        <input type="file" class="custom-file-input" name="preview_image">--}}
-{{--                                        <label class="custom-file-label">Выберите изображение</label>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="input-group-append">--}}
-{{--                                        <span class="input-group-text">Загрузить</span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                @error('preview_image')--}}
-{{--                                <div class="text-danger">{{ $message }}</div>--}}
-{{--                                @enderror--}}
-{{--                            </div>--}}
-{{--                            <div class="form-group w-50">--}}
-{{--                                <label for="exampleInputFile">Добавить главное изображение</label>--}}
-{{--                                <div class="w-50 mb-2">--}}
-{{--                                    <img src="{{ url('storage/' . $post->main_image) }}" alt="main_image" class="w-50">--}}
-{{--                                </div>--}}
-{{--                                <div class="input-group">--}}
-{{--                                    <div class="custom-file">--}}
-{{--                                        <input type="file" class="custom-file-input" name="main_image">--}}
-{{--                                        <label class="custom-file-label">Выберите изображение</label>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="input-group-append">--}}
-{{--                                        <span class="input-group-text">Загрузить</span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                                @error('main_image')--}}
-{{--                                <div class="text-danger">{{ $message }}</div>--}}
-{{--                                @enderror--}}
-{{--                            </div>--}}
+                            <div class="form-group w-50">
+                                <label for="exampleInputFile">Добавить превью</label>
+                                <div class="w-50 mb-2">
+                                    <img src="{{ url('storage/' . $post->preview_image) }}" alt="preview_image" class="w-50">
+                                </div>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name="preview_image">
+                                        <label class="custom-file-label">Выберите изображение</label>
+                                    </div>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Загрузить</span>
+                                    </div>
+                                </div>
+                                @error('preview_image')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group w-50">
+                                <label for="exampleInputFile">Добавить главное изображение</label>
+                                <div class="w-50 mb-2">
+                                    <img src="{{ url('storage/' . $post->main_image) }}" alt="main_image" class="w-50">
+                                </div>
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name="main_image">
+                                        <label class="custom-file-label">Выберите изображение</label>
+                                    </div>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">Загрузить</span>
+                                    </div>
+                                </div>
+                                @error('main_image')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
                             <div class="form-group w-50">
                                 <label>Выберите категорию</label>
                                 <select name="category_id" class="form-control">
