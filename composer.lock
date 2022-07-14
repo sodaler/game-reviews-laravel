@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b088662b1e72b9c368affc2f25bdcee8",
+    "content-hash": "3b312cc97dd29b8044611c12cc87b0ba",
     "packages": [
         {
             "name": "brick/math",
@@ -65,6 +65,91 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
+        },
+        {
+            "name": "cloudcreativity/laravel-json-api",
+            "version": "v4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cloudcreativity/laravel-json-api.git",
+                "reference": "ed70eb22d19aee382c2f14d90696d628def17ff6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cloudcreativity/laravel-json-api/zipball/ed70eb22d19aee382c2f14d90696d628def17ff6",
+                "reference": "ed70eb22d19aee382c2f14d90696d628def17ff6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel-json-api/neomerx-json-api": "^1.1",
+                "laravel/framework": "^8.76|^9.0",
+                "nyholm/psr7": "^1.2",
+                "php": "^7.4|^8.0",
+                "ramsey/uuid": "^3.0|^4.0",
+                "symfony/psr-http-message-bridge": "^2.0"
+            },
+            "require-dev": {
+                "ext-sqlite3": "*",
+                "guzzlehttp/guzzle": "^7.0",
+                "laravel-json-api/testing": "^1.1",
+                "laravel/legacy-factories": "^1.0.4",
+                "laravel/ui": "^3.0",
+                "mockery/mockery": "^1.1",
+                "orchestra/testbench": "^6.23|^7.0",
+                "phpunit/phpunit": "^9.5.10"
+            },
+            "suggest": {
+                "cloudcreativity/json-api-testing": "Required to use the test helpers."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "4.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "CloudCreativity\\LaravelJsonApi\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "JsonApi": "CloudCreativity\\LaravelJsonApi\\Facades\\JsonApi"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "helpers.php"
+                ],
+                "psr-4": {
+                    "CloudCreativity\\LaravelJsonApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                }
+            ],
+            "description": "JSON API (jsonapi.org) support for Laravel applications.",
+            "homepage": "https://github.com/cloudcreativity/laravel-json-api",
+            "keywords": [
+                "JSON-API",
+                "api",
+                "cloudcreativity",
+                "json",
+                "jsonapi",
+                "jsonapi.org",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/cloudcreativity/laravel-json-api/issues",
+                "source": "https://github.com/cloudcreativity/laravel-json-api/tree/v4.0.1"
+            },
+            "time": "2022-04-24T15:16:22+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -894,6 +979,139 @@
             "time": "2022-06-20T21:43:11+00:00"
         },
         {
+            "name": "itsgoingd/clockwork",
+            "version": "v5.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/itsgoingd/clockwork.git",
+                "reference": "9df41432da1d8cb39c7fda383ddcc02231c83ff3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itsgoingd/clockwork/zipball/9df41432da1d8cb39c7fda383ddcc02231c83ff3",
+                "reference": "9df41432da1d8cb39c7fda383ddcc02231c83ff3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Clockwork\\Support\\Laravel\\ClockworkServiceProvider"
+                    ],
+                    "aliases": {
+                        "Clockwork": "Clockwork\\Support\\Laravel\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Clockwork\\": "Clockwork/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "itsgoingd",
+                    "email": "itsgoingd@luzer.sk",
+                    "homepage": "https://twitter.com/itsgoingd"
+                }
+            ],
+            "description": "php dev tools in your browser",
+            "homepage": "https://underground.works/clockwork",
+            "keywords": [
+                "Devtools",
+                "debugging",
+                "laravel",
+                "logging",
+                "lumen",
+                "profiling",
+                "slim"
+            ],
+            "support": {
+                "issues": "https://github.com/itsgoingd/clockwork/issues",
+                "source": "https://github.com/itsgoingd/clockwork/tree/v5.1.6"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/itsgoingd",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-04-12T21:35:47+00:00"
+        },
+        {
+            "name": "laravel-json-api/neomerx-json-api",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/neomerx-json-api.git",
+                "reference": "a4472f48c54193cc5bac47b35496780db716b1ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/neomerx-json-api/zipball/a4472f48c54193cc5bac47b35496780db716b1ca",
+                "reference": "a4472f48c54193cc5bac47b35496780db716b1ca",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4|^8.0",
+                "psr/http-message": "^1.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "monolog/monolog": "^2.3",
+                "phpmd/phpmd": "^2.11",
+                "phpunit/phpunit": "^9.5.10",
+                "scrutinizer/ocular": "^1.8",
+                "squizlabs/php_codesniffer": "^3.6"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-v1.x": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Neomerx\\JsonApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "neomerx",
+                    "email": "info@neomerx.com"
+                }
+            ],
+            "description": "Framework agnostic JSON API (jsonapi.org) implementation",
+            "homepage": "https://github.com/neomerx/json-api",
+            "keywords": [
+                "JSON-API",
+                "api",
+                "json",
+                "jsonapi",
+                "jsonapi.org",
+                "neomerx"
+            ],
+            "support": {
+                "issues": "https://github.com/neomerx/json-api/issues",
+                "source": "https://github.com/laravel-json-api/neomerx-json-api/tree/v1.1.0"
+            },
+            "time": "2022-01-29T13:53:54+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v9.19.0",
             "source": {
@@ -1660,6 +1878,90 @@
             "time": "2022-04-17T13:12:02+00:00"
         },
         {
+            "name": "marcreichel/igdb-laravel",
+            "version": "3.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marcreichel/igdb-laravel.git",
+                "reference": "1684caeee553558de00bbc6116fe3c3f556de056"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marcreichel/igdb-laravel/zipball/1684caeee553558de00bbc6116fe3c3f556de056",
+                "reference": "1684caeee553558de00bbc6116fe3c3f556de056",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "~6.0|~7.0",
+                "laravel/framework": "^8.40.0|^9.0",
+                "nesbot/carbon": "^2.53.1",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "brainmaestro/composer-git-hooks": "^2.8",
+                "nunomaduro/collision": "^5.3",
+                "nunomaduro/larastan": "^1.0.0",
+                "orchestra/testbench": "^6.23",
+                "phpunit/phpunit": "^9.5.4",
+                "roave/security-advisories": "dev-latest"
+            },
+            "type": "library",
+            "extra": {
+                "hooks": {
+                    "config": {
+                        "stop-on-failure": [
+                            "pre-push"
+                        ]
+                    },
+                    "pre-push": [
+                        "composer stan",
+                        "composer test"
+                    ]
+                },
+                "laravel": {
+                    "providers": [
+                        "MarcReichel\\IGDBLaravel\\IGDBLaravelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MarcReichel\\IGDBLaravel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marc Reichel",
+                    "email": "mail@marcreichel.de"
+                }
+            ],
+            "description": "A Laravel wrapper for version 4 of the IGDB API (Apicalypse) including webhook handling",
+            "keywords": [
+                "api-wrapper",
+                "apicalypse",
+                "igdb",
+                "igdb-api",
+                "laravel",
+                "wrapper"
+            ],
+            "support": {
+                "issues": "https://github.com/marcreichel/igdb-laravel/issues",
+                "source": "https://github.com/marcreichel/igdb-laravel/tree/3.6.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/marcreichel",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-04T11:05:04+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.7.0",
             "source": {
@@ -2069,6 +2371,137 @@
             "time": "2022-05-31T20:59:12+00:00"
         },
         {
+            "name": "nyholm/psr7",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nyholm/psr7.git",
+                "reference": "f734364e38a876a23be4d906a2a089e1315be18a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/f734364e38a876a23be4d906a2a089e1315be18a",
+                "reference": "f734364e38a876a23be4d906a2a089e1315be18a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "php-http/message-factory": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "http-interop/http-factory-tests": "^0.9",
+                "php-http/psr7-integration-tests": "^1.0",
+                "phpunit/phpunit": "^7.5 || 8.5 || 9.4",
+                "symfony/error-handler": "^4.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nyholm\\Psr7\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com"
+                },
+                {
+                    "name": "Martijn van der Ven",
+                    "email": "martijn@vanderven.se"
+                }
+            ],
+            "description": "A fast PHP7 implementation of PSR-7",
+            "homepage": "https://tnyholm.se",
+            "keywords": [
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/Nyholm/psr7/issues",
+                "source": "https://github.com/Nyholm/psr7/tree/1.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Zegnat",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nyholm",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-06-22T07:13:36+00:00"
+        },
+        {
+            "name": "php-http/message-factory",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/message-factory.git",
+                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/message-factory/zipball/a478cb11f66a6ac48d8954216cfed9aa06a501a1",
+                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "Factory interfaces for PSR-7 HTTP Message",
+            "homepage": "http://php-http.org",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/message-factory/issues",
+                "source": "https://github.com/php-http/message-factory/tree/master"
+            },
+            "time": "2015-12-19T14:08:53+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.8.1",
             "source": {
@@ -2404,30 +2837,30 @@
         },
         {
             "name": "psr/log",
-            "version": "3.0.0",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
-                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.0"
+                "php": ">=5.3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Psr\\Log\\": "src"
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2448,9 +2881,9 @@
                 "psr-3"
             ],
             "support": {
-                "source": "https://github.com/php-fig/log/tree/3.0.0"
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
             },
-            "time": "2021-07-14T16:46:02+00:00"
+            "time": "2021-05-03T11:20:27+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -2505,16 +2938,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.11.6",
+            "version": "v0.11.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "3f5b5f8aaa979fbd0d1783173f4c82ad529fe621"
+                "reference": "77fc7270031fbc28f9a7bea31385da5c4855cb7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/3f5b5f8aaa979fbd0d1783173f4c82ad529fe621",
-                "reference": "3f5b5f8aaa979fbd0d1783173f4c82ad529fe621",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/77fc7270031fbc28f9a7bea31385da5c4855cb7a",
+                "reference": "77fc7270031fbc28f9a7bea31385da5c4855cb7a",
                 "shasum": ""
             },
             "require": {
@@ -2575,9 +3008,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.11.6"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.11.7"
             },
-            "time": "2022-07-03T16:40:23+00:00"
+            "time": "2022-07-07T13:49:11+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -4370,6 +4803,94 @@
             "time": "2022-04-12T16:11:42+00:00"
         },
         {
+            "name": "symfony/psr-http-message-bridge",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/psr-http-message-bridge.git",
+                "reference": "22b37c8a3f6b5d94e9cdbd88e1270d96e2f97b34"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/22b37c8a3f6b5d94e9cdbd88e1270d96e2f97b34",
+                "reference": "22b37c8a3f6b5d94e9cdbd88e1270d96e2f97b34",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "psr/http-message": "^1.0",
+                "symfony/http-foundation": "^4.4 || ^5.0 || ^6.0"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.1",
+                "psr/log": "^1.1 || ^2 || ^3",
+                "symfony/browser-kit": "^4.4 || ^5.0 || ^6.0",
+                "symfony/config": "^4.4 || ^5.0 || ^6.0",
+                "symfony/event-dispatcher": "^4.4 || ^5.0 || ^6.0",
+                "symfony/framework-bundle": "^4.4 || ^5.0 || ^6.0",
+                "symfony/http-kernel": "^4.4 || ^5.0 || ^6.0",
+                "symfony/phpunit-bridge": "^5.4@dev || ^6.0"
+            },
+            "suggest": {
+                "nyholm/psr7": "For a super lightweight PSR-7/17 implementation"
+            },
+            "type": "symfony-bridge",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bridge\\PsrHttpMessage\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "PSR HTTP message bridge",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/symfony/psr-http-message-bridge/issues",
+                "source": "https://github.com/symfony/psr-http-message-bridge/tree/v2.1.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-11-05T13:13:39+00:00"
+        },
+        {
             "name": "symfony/routing",
             "version": "v6.0.8",
             "source": {
@@ -5153,6 +5674,64 @@
     ],
     "packages-dev": [
         {
+            "name": "cloudcreativity/json-api-testing",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cloudcreativity/json-api-testing.git",
+                "reference": "c7c0f0a0fc016853b6e7801e8b873f7b86299680"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cloudcreativity/json-api-testing/zipball/c7c0f0a0fc016853b6e7801e8b873f7b86299680",
+                "reference": "c7c0f0a0fc016853b6e7801e8b873f7b86299680",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/contracts": "^8.0|^9.0",
+                "illuminate/support": "^8.0|^9.0",
+                "php": "^7.4|^8.0",
+                "phpunit/phpunit": "^9.5.10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CloudCreativity\\JsonApi\\Testing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                }
+            ],
+            "description": "PHPUnit test helpers to check JSON API documents.",
+            "homepage": "https://github.com/cloudcreativity/json-api",
+            "keywords": [
+                "JSON-API",
+                "api",
+                "cloudcreativity",
+                "json",
+                "jsonapi",
+                "jsonapi.org"
+            ],
+            "support": {
+                "issues": "https://github.com/cloudcreativity/json-api/issues",
+                "source": "https://github.com/cloudcreativity/json-api-testing/tree/v4.0.0"
+            },
+            "time": "2022-02-08T18:01:42+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.4.1",
             "source": {
@@ -5463,6 +6042,71 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "laravel-json-api/testing",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-json-api/testing.git",
+                "reference": "5836ef94caa774f7cfc9a35f0069dd2cb97adc89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-json-api/testing/zipball/5836ef94caa774f7cfc9a35f0069dd2cb97adc89",
+                "reference": "5836ef94caa774f7cfc9a35f0069dd2cb97adc89",
+                "shasum": ""
+            },
+            "require": {
+                "cloudcreativity/json-api-testing": "^3.3|^4.0",
+                "ext-json": "*",
+                "illuminate/http": "^8.0|^9.0",
+                "illuminate/support": "^8.0|^9.0",
+                "illuminate/testing": "^8.0|^9.0",
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "laravel/framework": "^8.0|^9.0",
+                "phpunit/phpunit": "^9.5.10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelJsonApi\\Testing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Cloud Creativity Ltd",
+                    "email": "info@cloudcreativity.co.uk"
+                },
+                {
+                    "name": "Christopher Gammie",
+                    "email": "contact@gammie.co.uk"
+                }
+            ],
+            "description": "Test helpers for JSON:API compliant APIs.",
+            "homepage": "https://github.com/laravel-json-api/testing",
+            "keywords": [
+                "JSON-API",
+                "jsonapi",
+                "jsonapi.org",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel-json-api/testing/issues",
+                "source": "https://github.com/laravel-json-api/testing/tree/v1.1.0"
+            },
+            "time": "2022-02-08T18:12:31+00:00"
         },
         {
             "name": "laravel/sail",
@@ -7818,7 +8462,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.0.2"
+        "php": "^8.0.17",
+        "ext-curl": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"

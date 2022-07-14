@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>GoodGames | Blog Grid</title>
+    <title>Обзоры игр и не только</title>
 
     <meta name="description" content="GoodGames - Bootstrap template for communities and games store">
     <meta name="keywords" content="game, gaming, template, HTML template, responsive, Bootstrap, premium">
@@ -73,110 +73,51 @@
 -->
 <header class="nk-header nk-header-opaque">
 
-
     <!-- START: Top Contacts -->
     <div class="nk-contacts-top">
         <div class="container">
             <div class="nk-contacts-left">
                 <ul class="nk-social-links">
-                    <li><a class="nk-social-rss" href="#"><span class="fa fa-rss"></span></a></li>
-                    <li><a class="nk-social-twitch" href="#"><span class="fab fa-twitch"></span></a></li>
-                    <li><a class="nk-social-steam" href="#"><span class="fab fa-steam"></span></a></li>
-                    <li><a class="nk-social-facebook" href="#"><span class="fab fa-facebook"></span></a></li>
-                    <li><a class="nk-social-google-plus" href="#"><span class="fab fa-google-plus"></span></a></li>
-                    <li><a class="nk-social-twitter" href="#" target="_blank"><span class="fab fa-twitter"></span></a>
-                    </li>
-                    <li><a class="nk-social-pinterest" href="#"><span class="fab fa-pinterest-p"></span></a></li>
-
-                    <!-- Additional Social Buttons
-                        <li><a class="nk-social-behance" href="#"><span class="fab fa-behance"></span></a></li>
-                        <li><a class="nk-social-bitbucket" href="#"><span class="fab fa-bitbucket"></span></a></li>
-                        <li><a class="nk-social-dropbox" href="#"><span class="fab fa-dropbox"></span></a></li>
-                        <li><a class="nk-social-dribbble" href="#"><span class="fab fa-dribbble"></span></a></li>
-                        <li><a class="nk-social-deviantart" href="#"><span class="fab fa-deviantart"></span></a></li>
-                        <li><a class="nk-social-flickr" href="#"><span class="fab fa-flickr"></span></a></li>
-                        <li><a class="nk-social-foursquare" href="#"><span class="fab fa-foursquare"></span></a></li>
-                        <li><a class="nk-social-github" href="#"><span class="fab fa-github"></span></a></li>
-                        <li><a class="nk-social-instagram" href="#"><span class="fab fa-instagram"></span></a></li>
-                        <li><a class="nk-social-linkedin" href="#"><span class="fab fa-linkedin"></span></a></li>
-                        <li><a class="nk-social-medium" href="#"><span class="fab fa-medium"></span></a></li>
-                        <li><a class="nk-social-odnoklassniki" href="#"><span class="fab fa-odnoklassniki"></span></a></li>
-                        <li><a class="nk-social-paypal" href="#"><span class="fab fa-paypal"></span></a></li>
-                        <li><a class="nk-social-reddit" href="#"><span class="fab fa-reddit"></span></a></li>
-                        <li><a class="nk-social-skype" href="#"><span class="fab fa-skype"></span></a></li>
-                        <li><a class="nk-social-soundcloud" href="#"><span class="fab fa-soundcloud"></span></a></li>
-                        <li><a class="nk-social-slack" href="#"><span class="fab fa-slack"></span></a></li>
-                        <li><a class="nk-social-tumblr" href="#"><span class="fab fa-tumblr"></span></a></li>
-                        <li><a class="nk-social-vimeo" href="#"><span class="fab fa-vimeo"></span></a></li>
-                        <li><a class="nk-social-vk" href="#"><span class="fab fa-vk"></span></a></li>
-                        <li><a class="nk-social-wordpress" href="#"><span class="fab fa-wordpress"></span></a></li>
-                        <li><a class="nk-social-youtube" href="#"><span class="fab fa-youtube"></span></a></li>
-                    -->
+                    <li><a class="nk-social-twitch" href="https://www.twitch.tv/" target="_blank"><span class="fab fa-twitch"></span></a></li>
+                    <li><a class="nk-social-steam" href="https://store.steampowered.com/" target="_blank"><span class="fab fa-steam"></span></a></li>
+                    <li><a class="nk-social-facebook" href="https://www.facebook.com/" target="_blank"><span class="fab fa-facebook"></span></a></li>
+                    <li><a class="nk-social-google-plus" href="https://play.google.com/" target="_blank"><span class="fab fa-google-play"></span></a></li>
+                    <li><a class="nk-social-twitter" href="https://www.twitter.com/" target="_blank"><span
+                                class="fab fa-twitter"></span></a></li>
+                    <li><a class="nk-social-pinterest" href="https://www.pinterest.ru/" target="_blank"><span class="fab fa-pinterest-p"></span></a></li>
+                    <li><a class="nk-social-github" href="https://github.com/sodaler" target="_blank"><span class="fab fa-github"></span></a></li>
                 </ul>
             </div>
             <div class="nk-contacts-right">
                 <ul class="nk-contacts-icons">
-
                     <li>
-                        <a href="#" data-toggle="modal" data-target="#modalSearch">
-                            <span class="fa fa-search"></span>
+                        <a href="{{ route('post.index') }}">
+                            <span class="fa fa-home"></span>
                         </a>
                     </li>
-
-
                     <li>
-                        <a href="#" data-toggle="modal" data-target="#modalLogin">
+                        <a href="{{ route('personal.main.index') }}">
                             <span class="fa fa-user"></span>
                         </a>
                     </li>
-
-
+                    @auth()
                     <li>
-                    <span class="nk-cart-toggle">
-                        <span class="fa fa-shopping-cart"></span>
-                        <span class="nk-badge">27</span>
-                    </span>
-                        <div class="nk-cart-dropdown">
-
-                            <div class="nk-widget-post">
-                                <a href="store-product.html" class="nk-post-image">
-                                    <img src="{{ asset('assets/images/product-5-xs.jpg') }}" alt="In all revolutions of">
-                                </a>
-                                <h3 class="nk-post-title">
-                                    <a href="#" class="nk-cart-remove-item"><span class="ion-android-close"></span></a>
-                                    <a href="store-product.html">In all revolutions of</a>
-                                </h3>
-                                <div class="nk-gap-1"></div>
-                                <div class="nk-product-price">€ 23.00</div>
-                            </div>
-
-                            <div class="nk-widget-post">
-                                <a href="store-product.html" class="nk-post-image">
-                                    <img src="{{ asset('assets/images/product-7-xs.jpg') }}" alt="With what mingled joy">
-                                </a>
-                                <h3 class="nk-post-title">
-                                    <a href="#" class="nk-cart-remove-item"><span class="ion-android-close"></span></a>
-                                    <a href="store-product.html">With what mingled joy</a>
-                                </h3>
-                                <div class="nk-gap-1"></div>
-                                <div class="nk-product-price">€ 14.00</div>
-                            </div>
-
-                            <div class="nk-gap-2"></div>
-                            <div class="text-center">
-                                <a href="store-checkout.html"
-                                   class="nk-btn nk-btn-rounded nk-btn-color-main-1 nk-btn-hover-color-white">Proceed to
-                                    Checkout</a>
-                            </div>
-                        </div>
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <input type="submit" value="Выйти" class="btn btn-outline-danger">
+                        </form>
                     </li>
-
+                    @endauth
+                    @guest()
+                        <li>
+                            <a class="btn btn-outline-light" href="{{ route('login') }}">Войти</a>
+                        </li>
+                    @endguest
                 </ul>
             </div>
         </div>
     </div>
     <!-- END: Top Contacts -->
-
 
     <!--
         START: Navbar
@@ -190,203 +131,35 @@
         <div class="container">
             <div class="nk-nav-table">
 
-                <a href="index.html" class="nk-nav-logo">
+                <a href="{{ route('post.index') }}" class="nk-nav-logo">
                     <img src="{{ asset('assets/images/logo.png') }}" alt="GoodGames" width="199">
                 </a>
 
                 <ul class="nk-nav nk-nav-right d-none d-lg-table-cell" data-nav-mobile="#nk-nav-mobile">
 
-                    <li class=" nk-drop-item">
-                        <a href="elements.html">
-                            Features
-
+                    <li class="">
+                        <a href="{{ route('post.index') }}">
+                            Обзоры
                         </a>
-                        <ul class="dropdown">
-
-                            <li>
-                                <a href="elements.html">
-                                    Elements (Shortcodes)
-
-                                </a>
-                            </li>
-                            <li class=" nk-drop-item">
-                                <a href="forum.html">
-                                    Forum
-
-                                </a>
-                                <ul class="dropdown">
-
-                                    <li>
-                                        <a href="forum.html">
-                                            Forum
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forum-topics.html">
-                                            Topics
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="forum-single-topic.html">
-                                            Single Topic
-
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="widgets.html">
-                                    Widgets
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="coming-soon.html">
-                                    Coming Soon
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="offline.html">
-                                    Offline
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="404.html">
-                                    404
-
-                                </a>
-                            </li>
-                        </ul>
                     </li>
-                    <li class="active nk-drop-item">
-                        <a href="blog-list.html">
-                            Blog
-
+                    <li class="">
+                        <a href="{{ route('game.index') }}">
+                            Игры
                         </a>
-                        <ul class="dropdown">
-
-                            <li>
-                                <a href="news.html">
-                                    News
-
-                                </a>
-                            </li>
-                            <li class="active nk-drop-item">
-                                <a href="blog-grid.html">
-                                    Blog With Sidebar
-
-                                </a>
-                                <ul class="dropdown">
-
-                                    <li class="active">
-                                        <a href="blog-grid.html">
-                                            Blog Grid
-
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-list.html">
-                                            Blog List
-
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="blog-fullwidth.html">
-                                    Blog Fullwidth
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="blog-article.html">
-                                    Blog Article
-
-                                </a>
-                            </li>
-                        </ul>
+                    <li>
+                        <a href="{{ route('category.index') }}">
+                            Категории
+                        </a>
                     </li>
                     <li>
-                        <a href="gallery.html">
-                            Gallery
-
+                        <a href="{{ route('gallery.index') }}">
+                            Галлерея
                         </a>
                     </li>
-                    <li class=" nk-drop-item">
-                        <a href="tournaments.html">
-                            Tournaments
-
+                    <li>
+                        <a href="{{ route('personal.main.index') }}">
+                            Кабинет
                         </a>
-                        <ul class="dropdown">
-
-                            <li>
-                                <a href="tournaments.html">
-                                    Tournament
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tournaments-teams.html">
-                                    Teams
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tournaments-teammate.html">
-                                    Teammate
-
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class=" nk-drop-item">
-                        <a href="store.html">
-                            Store
-
-                        </a>
-                        <ul class="dropdown">
-
-                            <li>
-                                <a href="store.html">
-                                    Store
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="store-product.html">
-                                    Product
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="store-catalog.html">
-                                    Catalog
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="store-catalog-alt.html">
-                                    Catalog Alt
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="store-checkout.html">
-                                    Checkout
-
-                                </a>
-                            </li>
-                            <li>
-                                <a href="store-cart.html">
-                                    Cart
-
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
                 <ul class="nk-nav nk-nav-right nk-nav-icons">
@@ -439,31 +212,10 @@ Additional Classes:
 
 <div class="nk-main">
 
-    <!-- START: Breadcrumbs -->
-    <div class="nk-gap-1"></div>
-    <div class="container">
-        <ul class="nk-breadcrumbs">
-
-
-            <li><a href="index.html">Home</a></li>
-
-
-            <li><span class="fa fa-angle-right"></span></li>
-
-            <li><a href="#">Blog</a></li>
-
-
-            <li><span class="fa fa-angle-right"></span></li>
-
-            <li><span>Blog Grid</span></li>
-
-        </ul>
-    </div>
-    <div class="nk-gap-1"></div>
-    <!-- END: Breadcrumbs -->
 
 
     @yield('content')
+
 
     <div class="nk-gap-2"></div>
 
@@ -473,66 +225,23 @@ Additional Classes:
 
         <div class="container">
             <div class="nk-gap-3"></div>
+            <h4 class=""><span class="text-main-1">Обсуждаемые</span> посты</h4>
             <div class="row vertical-gap">
-                <div class="col-md-6">
+                @foreach($mostComments as $post)
+                <div class="col-md-4">
                     <div class="nk-widget">
-                        <h4 class="nk-widget-title"><span class="text-main-1">Contact</span> With Us</h4>
-                        <div class="nk-widget-content">
-                            <form action="php/ajax-contact-form.php" class="nk-form nk-form-ajax">
-                                <div class="row vertical-gap sm-gap">
-                                    <div class="col-md-6">
-                                        <input type="email" class="form-control required" name="email"
-                                               placeholder="Email *">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control required" name="name"
-                                               placeholder="Name *">
-                                    </div>
-                                </div>
-                                <div class="nk-gap"></div>
-                                <textarea class="form-control required" name="message" rows="5"
-                                          placeholder="Message *"></textarea>
-                                <div class="nk-gap-1"></div>
-                                <button class="nk-btn nk-btn-rounded nk-btn-color-white">
-                                    <span>Send</span>
-                                    <span class="icon"><i class="ion-paper-airplane"></i></span>
-                                </button>
-                                <div class="nk-form-response-success"></div>
-                                <div class="nk-form-response-error"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="nk-widget">
-                        <h4 class="nk-widget-title"><span class="text-main-1">Latest</span> Posts</h4>
                         <div class="nk-widget-content">
                             <div class="row vertical-gap sm-gap">
-
                                 <div class="col-lg-6">
-                                    <div class="nk-widget-post-2">
-                                        <a href="blog-article.html" class="nk-post-image">
-                                            <img src="{{ asset('assets/images/post-1-sm.jpg') }}" alt="">
+                                    <div class="nk-widget-post-3">
+                                        <a href="{{ route('post.show', $post->id) }}" class="nk-post-image">
+                                            <img src="{{ asset('storage/' . $post->preview_image) }}" alt="" width="208px" height="117px">
                                         </a>
-                                        <div class="nk-post-title"><a href="blog-article.html">Smell magic in the air.
-                                                Or maybe barbecue</a></div>
+                                        <div class="nk-post-title mt-2"><a href="{{ route('post.show', $post->id) }}">{{ $post->title }}</a></div>
+                                        <span class="fa fa-comments nk-post-date"></span> <span class="nk-post-date">{{ $post->comments->count() }}</span>
                                         <div class="nk-post-date">
-                                            <span class="fa fa-calendar"></span> Sep 18, 2018
-                                            <span class="fa fa-comments"></span> <a href="#">4</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="nk-widget-post-2">
-                                        <a href="blog-article.html" class="nk-post-image">
-                                            <img src="{{ asset('assets/images/post-2-sm.jpg') }}" alt="">
-                                        </a>
-                                        <div class="nk-post-title"><a href="blog-article.html">Grab your sword and fight
-                                                the Horde</a></div>
-                                        <div class="nk-post-date">
-                                            <span class="fa fa-calendar"></span> Sep 5, 2018
-                                            <span class="fa fa-comments"></span> <a href="#">7</a>
+                                            <span class="fa fa-calendar"></span> {{ \Carbon\Carbon::parse($post->created_at)->translatedFormat('F') }} {{ \Carbon\Carbon::parse($post->created_at)->day }}
+                                            , {{ \Carbon\Carbon::parse($post->created_at)->year }}
                                         </div>
                                     </div>
                                 </div>
@@ -540,13 +249,8 @@ Additional Classes:
                             </div>
                         </div>
                     </div>
-                    <div class="nk-widget">
-                        <h4 class="nk-widget-title"><span class="text-main-1">In</span> Twitter</h4>
-                        <div class="nk-widget-content">
-                            <div class="nk-twitter-list" data-twitter-count="1"></div>
-                        </div>
-                    </div>
                 </div>
+                @endforeach
             </div>
             <div class="nk-gap-3"></div>
         </div>
@@ -554,43 +258,19 @@ Additional Classes:
         <div class="nk-copyright">
             <div class="container">
                 <div class="nk-copyright-left">
-                    <a target="_blank" href="https://www.templateshub.net">Templates Hub</a>
+                    <a target="_blank" href="https://github.com/sodaler">My GitHub</a>
                 </div>
                 <div class="nk-copyright-right">
                     <ul class="nk-social-links-2">
-                        <li><a class="nk-social-rss" href="#"><span class="fa fa-rss"></span></a></li>
-                        <li><a class="nk-social-twitch" href="#"><span class="fab fa-twitch"></span></a></li>
-                        <li><a class="nk-social-steam" href="#"><span class="fab fa-steam"></span></a></li>
-                        <li><a class="nk-social-facebook" href="#"><span class="fab fa-facebook"></span></a></li>
-                        <li><a class="nk-social-google-plus" href="#"><span class="fab fa-google-plus"></span></a></li>
-                        <li><a class="nk-social-twitter" href="#" target="_blank"><span
+                        <li><a class="nk-social-twitch" href="https://www.twitch.tv/" target="_blank"><span class="fab fa-twitch"></span></a></li>
+                        <li><a class="nk-social-steam" href="https://store.steampowered.com/" target="_blank"><span class="fab fa-steam"></span></a></li>
+                        <li><a class="nk-social-facebook" href="https://www.facebook.com/" target="_blank"><span class="fab fa-facebook"></span></a></li>
+                        <li><a class="nk-social-google-plus" href="https://play.google.com/" target="_blank"><span class="fab fa-google-play"></span></a></li>
+                        <li><a class="nk-social-twitter" href="https://www.twitter.com/" target="_blank"><span
                                     class="fab fa-twitter"></span></a></li>
-                        <li><a class="nk-social-pinterest" href="#"><span class="fab fa-pinterest-p"></span></a></li>
+                        <li><a class="nk-social-pinterest" href="https://www.pinterest.ru/" target="_blank"><span class="fab fa-pinterest-p"></span></a></li>
+                        <li><a class="nk-social-github" href="https://github.com/sodaler" target="_blank"><span class="fab fa-github"></span></a></li>
 
-                        <!-- Additional Social Buttons
-                            <li><a class="nk-social-behance" href="#"><span class="fab fa-behance"></span></a></li>
-                            <li><a class="nk-social-bitbucket" href="#"><span class="fab fa-bitbucket"></span></a></li>
-                            <li><a class="nk-social-dropbox" href="#"><span class="fab fa-dropbox"></span></a></li>
-                            <li><a class="nk-social-dribbble" href="#"><span class="fab fa-dribbble"></span></a></li>
-                            <li><a class="nk-social-deviantart" href="#"><span class="fab fa-deviantart"></span></a></li>
-                            <li><a class="nk-social-flickr" href="#"><span class="fab fa-flickr"></span></a></li>
-                            <li><a class="nk-social-foursquare" href="#"><span class="fab fa-foursquare"></span></a></li>
-                            <li><a class="nk-social-github" href="#"><span class="fab fa-github"></span></a></li>
-                            <li><a class="nk-social-instagram" href="#"><span class="fab fa-instagram"></span></a></li>
-                            <li><a class="nk-social-linkedin" href="#"><span class="fab fa-linkedin"></span></a></li>
-                            <li><a class="nk-social-medium" href="#"><span class="fab fa-medium"></span></a></li>
-                            <li><a class="nk-social-odnoklassniki" href="#"><span class="fab fa-odnoklassniki"></span></a></li>
-                            <li><a class="nk-social-paypal" href="#"><span class="fab fa-paypal"></span></a></li>
-                            <li><a class="nk-social-reddit" href="#"><span class="fab fa-reddit"></span></a></li>
-                            <li><a class="nk-social-skype" href="#"><span class="fab fa-skype"></span></a></li>
-                            <li><a class="nk-social-soundcloud" href="#"><span class="fab fa-soundcloud"></span></a></li>
-                            <li><a class="nk-social-slack" href="#"><span class="fab fa-slack"></span></a></li>
-                            <li><a class="nk-social-tumblr" href="#"><span class="fab fa-tumblr"></span></a></li>
-                            <li><a class="nk-social-vimeo" href="#"><span class="fab fa-vimeo"></span></a></li>
-                            <li><a class="nk-social-vk" href="#"><span class="fab fa-vk"></span></a></li>
-                            <li><a class="nk-social-wordpress" href="#"><span class="fab fa-wordpress"></span></a></li>
-                            <li><a class="nk-social-youtube" href="#"><span class="fab fa-youtube"></span></a></li>
-                        -->
                     </ul>
                 </div>
             </div>
@@ -609,89 +289,6 @@ Additional Classes:
 
 <!-- END: Page Background -->
 
-
-<!-- START: Search Modal -->
-<div class="nk-modal modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="ion-android-close"></span>
-                </button>
-
-                <h4 class="mb-0">Search</h4>
-
-                <div class="nk-gap-1"></div>
-                <form action="#" class="nk-form nk-form-style-1">
-                    <input type="text" value="" name="search" class="form-control"
-                           placeholder="Type something and press Enter" autofocus>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END: Search Modal -->
-
-
-<!-- START: Login Modal -->
-<div class="nk-modal modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span class="ion-android-close"></span>
-                </button>
-
-                <h4 class="mb-0"><span class="text-main-1">Sign</span> In</h4>
-
-                <div class="nk-gap-1"></div>
-                <form action="#" class="nk-form text-white">
-                    <div class="row vertical-gap">
-                        <div class="col-md-6">
-                            Use email and password:
-
-                            <div class="nk-gap"></div>
-                            <input type="email" value="" name="email" class=" form-control" placeholder="Email">
-
-                            <div class="nk-gap"></div>
-                            <input type="password" value="" name="password" class="required form-control"
-                                   placeholder="Password">
-                        </div>
-                        <div class="col-md-6">
-                            Or social account:
-
-                            <div class="nk-gap"></div>
-
-                            <ul class="nk-social-links-2">
-                                <li><a class="nk-social-facebook" href="#"><span class="fab fa-facebook"></span></a>
-                                </li>
-                                <li><a class="nk-social-google-plus" href="#"><span
-                                            class="fab fa-google-plus"></span></a></li>
-                                <li><a class="nk-social-twitter" href="#"><span class="fab fa-twitter"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="nk-gap-1"></div>
-                    <div class="row vertical-gap">
-                        <div class="col-md-6">
-                            <a href="#" class="nk-btn nk-btn-rounded nk-btn-color-white nk-btn-block">Sign In</a>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mnt-5">
-                                <small><a href="#">Forgot your password?</a></small>
-                            </div>
-                            <div class="mnt-5">
-                                <small><a href="#">Not a member? Sign up</a></small>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END: Login Modal -->
 
 
 <!-- START: Scripts -->

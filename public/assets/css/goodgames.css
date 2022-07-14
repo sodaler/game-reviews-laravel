@@ -43,7 +43,7 @@
  -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
   [Table of contents]
-  
+
   1. Base
   2. Typography
   3. Bootstrap
@@ -1070,7 +1070,7 @@ h6,
     }
 }
 
-@media (min-width: 1200) {
+@media (min-width: 1200px) {
     .nk-img-fit-xl-up {
         max-width: 100%;
         height: auto;
@@ -8057,12 +8057,13 @@ div.nk-error {
 .nk-post-categories {
     float: right;
     margin-top: 6px;
+    margin-bottom: 20px;
     font-size: 1rem;
 }
 
 .nk-post-categories span,
 .nk-post-categories a {
-    padding: 2px 19px;
+    padding: 1px 30px;
     color: #fff;
     background-color: #293139;
     border-radius: 4px;
@@ -8072,7 +8073,7 @@ div.nk-error {
 .nk-post-categories span + a,
 .nk-post-categories a + span,
 .nk-post-categories a + a {
-    margin-left: 7px;
+    margin-left: 10px;
 }
 
 .nk-post-img .nk-post-categories {

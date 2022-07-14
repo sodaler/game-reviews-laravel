@@ -23,7 +23,7 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="{{ asset('plugins/daterangepicker/daterangepicker.css') }}">
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition dark-mode sidebar-mini layout-fixed">
 <div class="wrapper">
 
     <!-- Preloader -->
@@ -33,7 +33,7 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <nav class="main-header navbar navbar-expand navbar-dark">
         <!-- Left navbar links -->
         <div class="col-12 d-flex justify-content-between">
             <ul class="navbar-nav">
@@ -41,6 +41,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
             </ul>
+            <a class="btn btn-outline-light col-2" href="{{ route('post.index') }}">Обзоры игр</a>
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <form action="{{ route('logout') }}" method="POST">
@@ -91,8 +92,8 @@
 <!-- AdminLTE App -->
 <script src="{{ asset('dist/js/adminlte.js') }}"></script>
 <script>
-    $(document).ready(function () {
-        $('#summernote').summernote({
+    $(document).ready(function() {
+        $('.summernote').summernote({
             toolbar: [
                 // [groupName, [list of button]]
                 ['style', ['bold', 'italic', 'underline', 'clear']],
@@ -108,7 +109,7 @@
         bsCustomFileInput.init();
     });
     //Initialize Select2 Elements
-    $('.select2').select2()
+    $('.select2').select2();
 </script>
 <style>
     .custom-file-input:lang(en) ~ .custom-file-label::after {

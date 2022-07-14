@@ -18,6 +18,7 @@ class PostService
             }
             $data['preview_image'] = Storage::disk('public')->put('/images', $data['preview_image']);
             $data['main_image'] = Storage::disk('public')->put('/images', $data['main_image']);
+            $data['user_id'] = auth()->user()->id;
             $post = Post::firstOrCreate($data);
             if (isset($tagIds)) {
                 $post->tags()->attach($tagIds);
@@ -27,6 +28,7 @@ class PostService
             DB::rollBack();
             abort(500);
         }
+
     }
 
     public function update($data, $post)

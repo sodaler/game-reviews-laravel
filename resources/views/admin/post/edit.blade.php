@@ -31,15 +31,54 @@
                             @csrf
                             @method('PATCH')
                             <div class="form-group w-25">
+                                <label for="title" class="form-label">Заголовок поста</label>
                                 <input type="text" class="form-control" name="title" placeholder="название поста"
                                        value="{{ $post->title }}">
                                 @error('title')
                                 <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
+                            <div class="form-group w-25">
+                                <label for="content_title" class="form-label">Заголовок для контента</label>
+                                <input type="text" class="form-control" name="content_title" placeholder="название"
+                                       value="{{ $post->content_title }}">
+                                @error('content_title')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
                             <div class="form-group">
-                                <textarea id="summernote" name="content">{{ $post->content }}</textarea>
+                                <label for="content" class="form-label">Основной контент</label>
+                                <textarea class="summernote" name="content">{{ $post->content }}</textarea>
                                 @error('content')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="short_description" class="form-label">Краткое описание</label>
+                                <textarea class="summernote text-white" name="short_description">{{ $post->short_description }}</textarea>
+                                @error('short_description')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="quote" class="form-label">Цитата</label>
+                                <textarea class="summernote" name="quote">{{ $post->quote }}</textarea>
+                                @error('quote')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group w-25">
+                                <label for="author" class="form-label">Автор цитаты</label>
+                                <input type="text" class="form-control" name="author" placeholder="автор"
+                                       value="{{ $post->author }}">
+                                @error('author')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="conclusion" class="form-label">Заключение</label>
+                                <textarea class="summernote" name="conclusion">{{ $post->conclusion }}</textarea>
+                                @error('conclusion')
                                 <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>

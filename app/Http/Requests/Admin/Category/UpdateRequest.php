@@ -25,6 +25,14 @@ class UpdateRequest extends FormRequest
     {
         return [
             'title' => 'required|string',
+            'preview_image' => 'nullable|file',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+          'preview_image.file' => 'Необходимо выбрать файл',
         ];
     }
 

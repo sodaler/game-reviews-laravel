@@ -373,12 +373,12 @@ var options = {
         instagram: '<div class="col-4">\n                <a href="{{link}}" target="_blank">\n                    <img src="{{image}}" alt="{{caption}}" class="nk-img-stretch">\n                </a>\n            </div>',
         instagramLoadingText: 'Loading...',
         instagramFailText: 'Failed to fetch data',
-        instagramApiPath: 'php/instagram/instagram.php',
+
 
         twitter: '<div class="nk-twitter">\n                <span class="nk-twitter-icon fab fa-twitter"></span>\n                <div class="nk-twitter-name">\n                      <a href="https://twitter.com/{{screen_name}}" target="_blank">@{{screen_name}}</a>\n                </div>\n                <div class="nk-twitter-date">\n                    <span>{{date}}</span>\n                </div>\n                <div class="nk-twitter-text">\n                   {{tweet}}\n                </div>\n            </div>',
         twitterLoadingText: 'Loading...',
         twitterFailText: 'Failed to fetch data',
-        twitterApiPath: 'php/twitter/tweet.php',
+
 
         countdown: '<div class="nk-hexagon">\n                <div class="nk-hexagon-inner"></div>\n                <span>%D</span>\n                <small>Days</small>\n            </div>\n            <div class="nk-hexagon">\n                <div class="nk-hexagon-inner"></div>\n                <span>%H</span>\n                <small>Hours</small>\n            </div>\n            <div class="nk-hexagon">\n                <div class="nk-hexagon-inner"></div>\n                <span>%M</span>\n                <small>Minutes</small>\n            </div>\n            <div class="nk-hexagon">\n                <div class="nk-hexagon-inner"></div>\n                <span>%S</span>\n                <small>Seconds</small>\n            </div>'
     }

@@ -12,7 +12,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('admin.user.index') }}" class="nav-link">
                     <i class="nav-icon fas fa-users"></i>
                     <p>
                         Пользователи
@@ -40,6 +40,14 @@
                     <i class="nav-icon fas fa-tags"></i>
                     <p>
                         Теги
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('post.index') }}" class="nav-link">
+                    <i class="nav-icon fas fa-clone"></i>
+                    <p>
+                        Обзоры игр
                     </p>
                 </a>
             </li>

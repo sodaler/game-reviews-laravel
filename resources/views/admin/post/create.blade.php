@@ -27,18 +27,65 @@
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
                     <div class="col-sm-12">
-                        <form action="{{ route('admin.post.store') }}" method="POST">
+                        <form action="{{ route('admin.post.store') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group w-25">
-                                <input type="text" class="form-control" name="title" placeholder="название поста"
+                                <label for="title" class="form-label">Заголовок поста</label>
+                                <input type="text" class="form-control" name="title" placeholder="название"
                                        value="{{ old('title') }}">
                                 @error('title')
                                 <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
+                            <div class="form-group w-25">
+                                <label for="content_title" class="form-label">Заголовок для контента</label>
+                                <input type="text" class="form-control" name="content_title" placeholder="название"
+                                       value="{{ old('content_title') }}">
+                                @error('content_title')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
                             <div class="form-group">
-                                <textarea id="summernote" name="content">{{ old('content') }}</textarea>
+                                <label for="content" class="form-label">Основной контент</label>
+                                <textarea class="summernote" name="content">{{ old('content') }}</textarea>
                                 @error('content')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="short_description" class="form-label">Краткое описание</label>
+                                <textarea class="summernote" name="short_description">{{ old('short_description') }}</textarea>
+                                @error('short_description')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="quote" class="form-label">Цитата</label>
+                                <textarea class="summernote" name="quote">{{ old('quote') }}</textarea>
+                                @error('quote')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group w-25">
+                                <label for="author" class="form-label">Автор цитаты</label>
+                                <input type="text" class="form-control" name="author" placeholder="автор"
+                                       value="{{ old('author') }}">
+                                @error('author')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="conclusion" class="form-label">Заключение</label>
+                                <textarea class="summernote" name="conclusion">{{ old('conclusion') }}</textarea>
+                                @error('conclusion')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="preview_url" class="form-label">Превью видео (ссылка)</label>
+                                <input type="text" class="form-control" name="preview_url" placeholder="Ссылка"
+                                       value="{{ old('preview_url') }}">
+                                @error('preview_url')
                                 <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
