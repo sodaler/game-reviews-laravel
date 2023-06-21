@@ -30,7 +30,7 @@ class PostFactory extends Factory
             'content_title' => ucfirst($this->faker->words(4, true)),
             'conclusion' => $this->faker->text(10),
             'user_id' => User::query()->inRandomOrder()->value('id'),
-            'preview_url' => array_rand(['https://www.youtube.com/watch?v=c0i88t0Kacs', 'https://www.youtube.com/watch?v=-cSFPIwMEq4', 'https://www.youtube.com/watch?v=eaW0tYpxyp0']),
+            'preview_url' => 'https://www.youtube.com/watch?v=c0i88t0Kacs',
         ];
     }
 }

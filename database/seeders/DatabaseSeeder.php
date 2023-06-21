@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         UserFactory::new()->count(10)->create();
-        CategoryFactory::new()->count(1)->create();
+        CategoryFactory::new()->count(20)->create();
         TagFactory::new()->count(10)->create();
         PostFactory::new()->count(20)->create();
         PostTagFactory::new()->count(20)->create();

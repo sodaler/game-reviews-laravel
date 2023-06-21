@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrapFour();
         View::share([
-            'randomPosts' => Post::get()->random(3) ?: [],
+            'randomPosts' => Post::query()->inRandomOrder(3) ?: [],
             'lastUrl' => DB::table('posts')->whereNotNull('preview_url')->latest()->first(),
             'likedPosts' => Post::withCount('likedUsers')->orderBy('liked_users_count', 'DESC')->get()->take(3) ?: [],
             'mostComments' => Post::withCount('comments')->orderBy('comments_count', 'DESC')->get()->take(3) ?: [],

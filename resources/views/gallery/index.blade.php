@@ -33,7 +33,7 @@
                         <div class="nk-gallery-item-group">
                             <a href="{{ route('gallery.post.index', $category->id) }}" class="nk-gallery-item">
                                 <div class="nk-gallery-item-overlay"><span class="ion-eye"></span></div>
-                                <img src="{{ $category->preview_image }}" alt="">
+                                <img src="{{ asset('storage/' . $category->preview_image) }}" alt="">
                             </a>
                             <div class="nk-gallery-item-description">
                                 <h4 class="nk-gallery-item-description-title h5">{{ $category->title }}</h4>

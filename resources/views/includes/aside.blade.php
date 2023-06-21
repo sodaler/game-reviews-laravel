@@ -3,7 +3,9 @@
     <div class="nk-widget nk-widget-highlighted">
         <h4 class="nk-widget-title"><span><span class="text-main-1">Последнее</span> Видео</span></h4>
         <div class="nk-widget-content">
-            <div class="nk-plain-video" data-video="{{ $lastUrl->preview_url }}"></div>
+            @if($lastUrl)
+                <div class="nk-plain-video" data-video="{{ $lastUrl->preview_url }}"></div>
+            @endif
         </div>
     </div>
 

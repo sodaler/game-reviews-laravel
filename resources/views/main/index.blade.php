@@ -36,30 +36,6 @@
                                 <!-- END: Post -->
                             </div>
                         @endforeach
-
-                        {{--                    <div class="col-md-6">--}}
-                        {{--                        <!-- START: Post -->--}}
-                        {{--                        <div class="nk-blog-post">--}}
-                        {{--                            <a href="blog-article.html" class="nk-post-img">--}}
-                        {{--                                <img src="assets/images/post-2-mid.jpg" alt="Grab your sword and fight the Horde">--}}
-                        {{--                                <span class="nk-post-comments-count">7</span>--}}
-                        {{--                            </a>--}}
-                        {{--                            <div class="nk-gap"></div>--}}
-                        {{--                            <h2 class="nk-post-title h4"><a href="blog-article.html">Grab your sword and fight the Horde</a></h2>--}}
-                        {{--                            <div class="nk-post-by">--}}
-                        {{--                                <img src="assets/images/avatar-2.jpg" alt="Witch Murder" class="rounded-circle" width="35"> by <a href="#">Witch Murder</a> in Sep 5, 2018--}}
-                        {{--                            </div>--}}
-                        {{--                            <div class="nk-gap"></div>--}}
-                        {{--                            <div class="nk-post-text">--}}
-                        {{--                                <p>For good, too; though, in consequence of my previous emotions, I was still occasionally seized with a stormy sob . After we had jogged on for some little time, I asked the carrier...</p>--}}
-                        {{--                            </div>--}}
-                        {{--                            <div class="nk-gap"></div>--}}
-                        {{--                            <a href="blog-article.html" class="nk-btn nk-btn-rounded nk-btn-color-dark-3 nk-btn-hover-color-main-1">Read More</a>--}}
-                        {{--                        </div>--}}
-                        {{--                        <!-- END: Post -->--}}
-                        {{--                    </div>--}}
-
-
                     </div>
 
                     <!-- START: Pagination -->
@@ -107,15 +83,6 @@
                     <div class="nk-widget nk-widget-highlighted">
                         <h4 class="nk-widget-title"><span><span class="text-main-1">We</span> Are Social</span></h4>
                         <div class="nk-widget-content">
-                            <!--
-                                Social Links 3
-
-                                Additional Classes:
-                                    .nk-social-links-cols-5
-                                    .nk-social-links-cols-4
-                                    .nk-social-links-cols-3
-                                    .nk-social-links-cols-2
-                            -->
                             <ul class="nk-social-links-3 nk-social-links-cols-4">
                                 <li><a class="nk-social-twitch" href="#"><span class="fab fa-twitch"></span></a></li>
                                 <li><a class="nk-social-instagram" href="#"><span class="fab fa-instagram"></span></a>
@@ -131,29 +98,6 @@
                                 </li>
                                 <li><a class="nk-social-rss" href="#"><span class="fa fa-rss"></span></a></li>
 
-                                <!-- Additional Social Buttons
-                                    <li><a class="nk-social-behance" href="#"><span class="fab fa-behance"></span></a></li>
-                                    <li><a class="nk-social-bitbucket" href="#"><span class="fab fa-bitbucket"></span></a></li>
-                                    <li><a class="nk-social-dropbox" href="#"><span class="fab fa-dropbox"></span></a></li>
-                                    <li><a class="nk-social-dribbble" href="#"><span class="fab fa-dribbble"></span></a></li>
-                                    <li><a class="nk-social-deviantart" href="#"><span class="fab fa-deviantart"></span></a></li>
-                                    <li><a class="nk-social-flickr" href="#"><span class="fab fa-flickr"></span></a></li>
-                                    <li><a class="nk-social-foursquare" href="#"><span class="fab fa-foursquare"></span></a></li>
-                                    <li><a class="nk-social-github" href="#"><span class="fab fa-github"></span></a></li>
-                                    <li><a class="nk-social-linkedin" href="#"><span class="fab fa-linkedin"></span></a></li>
-                                    <li><a class="nk-social-medium" href="#"><span class="fab fa-medium"></span></a></li>
-                                    <li><a class="nk-social-odnoklassniki" href="#"><span class="fab fa-odnoklassniki"></span></a></li>
-                                    <li><a class="nk-social-paypal" href="#"><span class="fab fa-paypal"></span></a></li>
-                                    <li><a class="nk-social-reddit" href="#"><span class="fab fa-reddit"></span></a></li>
-                                    <li><a class="nk-social-skype" href="#"><span class="fab fa-skype"></span></a></li>
-                                    <li><a class="nk-social-soundcloud" href="#"><span class="fab fa-soundcloud"></span></a></li>
-                                    <li><a class="nk-social-steam" href="#"><span class="fab fa-steam"></span></a></li>
-                                    <li><a class="nk-social-slack" href="#"><span class="fab fa-slack"></span></a></li>
-                                    <li><a class="nk-social-tumblr" href="#"><span class="fab fa-tumblr"></span></a></li>
-                                    <li><a class="nk-social-vimeo" href="#"><span class="fab fa-vimeo"></span></a></li>
-                                    <li><a class="nk-social-vk" href="#"><span class="fab fa-vk"></span></a></li>
-                                    <li><a class="nk-social-wordpress" href="#"><span class="fab fa-wordpress"></span></a></li>
-                                -->
                             </ul>
                         </div>
                     </div>
