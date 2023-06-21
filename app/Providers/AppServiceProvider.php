@@ -28,13 +28,13 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-//        Paginator::useBootstrapFour();
+        Paginator::useBootstrapFour();
         View::share([
-            'randomPosts' => Post::get()->random(3),
+            'randomPosts' => Post::get()->random(3) ?: [],
             'lastUrl' => DB::table('posts')->whereNotNull('preview_url')->latest()->first(),
-            'likedPosts' => Post::withCount('likedUsers')->orderBy('liked_users_count', 'DESC')->get()->take(3),
-            'mostComments' => Post::withCount('comments')->orderBy('comments_count', 'DESC')->get()->take(3),
-            'lastImgs' => Post::orderBy('id', 'desc')->take(3)->get()
+            'likedPosts' => Post::withCount('likedUsers')->orderBy('liked_users_count', 'DESC')->get()->take(3) ?: [],
+            'mostComments' => Post::withCount('comments')->orderBy('comments_count', 'DESC')->get()->take(3) ?: [],
+            'lastImgs' => Post::orderBy('id', 'desc')->take(3)->get() ?: []
         ]);
         Carbon::setLocale('ru_RU');
     }
